@@ -7,6 +7,7 @@ contact:898536955@qq.com
 @file:SimpleGetHtmlErr.py
 @time:2017/3/26 0:39
 爬虫获取页面，多种情况的异常
+注意异常并不会退出程序
 """
 from urllib.request import urlopen
 from urllib.error import HTTPError, URLError
