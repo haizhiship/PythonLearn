@@ -6,11 +6,11 @@ from nltk.corpus import brown
 from nltk.book import text1, text2
 from nltk.corpus import wordnet as wn
 
-#2. 使用语料库模块处理austen-persuasion.txt。这本书中有多少词标识符？多少词类型？词标示符
+# # 2. 使用语料库模块处理austen-persuasion.txt。这本书中有多少词标识符？多少词类型？词标示符
 # >>> aus = nltk.corpus.gutenberg.words('austen-persuasion.txt')
 # >>> len(aus)
 # 98171
-# 词类型
+# # 词类型
 # >>> len(set(aus))
 # 6132
 #练习ConditionalFreqDist
@@ -26,7 +26,7 @@ from nltk.corpus import wordnet as wn
 # cfd = nltk.ConditionalFreqDist(genre_word)
 # print cfd.conditions()
 
-'''
+
 # 8、在名字语料库上定义一个条件频率分布，显示哪个首字母在男性名字中比在女性名字中更常用。
 
 names = nltk.corpus.names
@@ -44,11 +44,9 @@ for i in list(cfd['female.txt']):
           % (i, cfd['male.txt'][i], cfd['female.txt'][i])
     if cfd['male.txt'][i] > cfd ['female.txt'][i]:
            FirstNum.append(i)
-    else:
-        pass
 
 print '首字母在男性名字中比在女性名字中更常用:%r' % FirstNum
-'''
+
 # 9. 挑选两个文本，研究它们之间在词汇、词汇丰富性、文体等方面的差异。
 # 你能找出几个在这两个文本中词意相当不同的词吗？例如：在《白鲸记》与《理智与情感》中的 monstrous。
 
