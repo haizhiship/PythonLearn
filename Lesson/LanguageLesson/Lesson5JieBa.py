@@ -77,7 +77,7 @@ for w in words:
 #  optparse是专门在命令行添加选项的一个模块。
 
 from optparse import OptionParser
-MSG_USAGE = "myprog [-f ][-s ] arg1[,arg2..]"
+MSG_USAGE = "myprog [-f ][-s ] arg1[,arg2..]"bus
 optParser = OptionParser(MSG_USAGE)
 #以上，产生一个OptionParser的物件optParser。传入的值MSG_USAGE可被调用打印命令时显示出来。
 optParser.add_option("-f","--file",action = "store",type="string", dest = "fileName")
